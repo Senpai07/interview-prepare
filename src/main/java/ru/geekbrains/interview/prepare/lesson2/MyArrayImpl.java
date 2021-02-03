@@ -78,25 +78,6 @@ public class MyArrayImpl<E> implements MyArray<E> {
         return size;
     }
 
-    @Override
-    public void display() {
-        System.out.println(toString());
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder("[");
-        for (int i = 0; i < size - 1; i++) {
-            sb.append(data[i]);
-            sb.append(", ");
-        }
-        if (size > 0) {
-            sb.append(data[size - 1]);
-        }
-        sb.append("]");
-        return sb.toString();
-    }
-
     private void checkIndex(int index) {
         if (index < 0 || index >= size) {
             throw new IndexOutOfBoundsException();

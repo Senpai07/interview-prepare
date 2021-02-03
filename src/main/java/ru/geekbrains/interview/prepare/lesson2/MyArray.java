@@ -23,5 +23,4 @@ public interface MyArray<E> {
         return size() == 0;
     }
 
-    void display();
 }

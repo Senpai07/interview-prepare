@@ -14,8 +14,6 @@ public interface MyLinkedList<E> {
 
     boolean isEmpty();
 
-    void display();
-
     class Node<E> {
         E item;
         Node<E> next;

@@ -76,13 +76,4 @@ public class MyLinkedListImpl<E> implements MyLinkedList<E> {
         return size() == 0;
     }
 
-    @Override
-    public void display() {
-        Node<E> current = firstElement;
-        while (current != null) {
-            System.out.println(current.item);
-            current = current.next;
-        }
-    }
-
 }
